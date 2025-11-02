@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="蓝霁的个人介绍与Furry主题站点" />
+  <title>蓝霁 · 个人主页</title>
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" href="script.js" as="script">
+</head>
+<body>
+  <!-- 主题切换与导航 -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="paw" aria-hidden="true">🐾</span>
+      <span class="site-title">蓝霁 · Lan Ji</span>
+    </div>
+    <nav class="nav" aria-label="主导航">
+      <button class="menu-toggle" aria-label="打开菜单">☰</button>
+      <ul class="nav-list">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#furry">Furry收藏</a></li>
+        <li><a href="#guestbook">留言板</a></li>
+        <li><a href="#contact">联系方式</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <button id="themeToggle" class="theme-toggle" aria-label="切换明暗模式">🌙</button>
+    </div>
+  </header>
+
+  <!-- 首页 Hero -->
+  <section id="home" class="hero" aria-label="首页">
+    <div class="hero-inner">
+      <img class="avatar" src="assets/mmexport1762049942111.jpg" alt="蓝霁头像（请将图片放置于 assets 目录）" />
+      <div class="hero-text">
+        <h1>你好，我是 <span class="highlight">蓝霁</span></h1>
+        <p class="subtitle">职业：学生 · 核心爱好：<strong class="furry">Furry</strong></p>
+        <p class="tagline">可爱、灵动、毛茸茸，是我热爱的主题元素。</p>
+        <div class="hero-cta">
+          <a href="#furry" class="btn primary">查看我的 Furry 收藏</a>
+          <a href="#contact" class="btn secondary">联系我</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-paws" aria-hidden="true">
+      <span>🐾</span><span>🐾</span><span>🐾</span><span>🐾</span>
+    </div>
+  </section>
+
+  <!-- 关于我 -->
+  <section id="about" class="section" aria-label="关于我">
+    <div class="container">
+      <h2 class="section-title">关于我</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>基本信息</h3>
+          <ul class="info-list">
+            <li><strong>姓名：</strong>蓝霁</li>
+            <li><strong>职业：</strong>学生</li>
+            <li><strong>核心爱好：</strong><span class="badge furry">Furry</span></li>
+            <li><strong>擅长：</strong>兽装制作、作品图像呈现</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <h3>我的入坑故事</h3>
+          <p>日子在琐碎与压力中疾行，心尖总缺一角柔软。直到那个倦怠午后，漫展镜头里的“毛茸茸”撞入眼底——银白鬃毛缀浅蓝尾尖，琥珀眼片藏着星辰，蓬松爪尖轻晃，耳尖随姿态耷拉，纯粹的快乐无需言语，便漫过屏幕浸润心房。</p>
+          <p>原来，兽装是用面料与匠心织就的温柔载体，让日常面具下的情绪得以舒展。我沉溺于这份创作的魔力，在图纸上勾勒版型，于面料中甄选绒毛，渴望亲手打造专属的“第二身份”。而这份热爱最珍贵的馈赠，是遇见了木京与蔚蓝。</p>
+          <p>木京是化平面为立体的匠人，绒毛疏密、眼片弧度、可动结构皆经他手焕活，他镜头下兽装与自然相融的光影，是我不竭的灵感源泉；蔚蓝是万能修理师，似乎关于电器的维修，皆能被他轻松化解。我们三人围坐，切磋版型优化，分享缝制技巧，攻克机械难关，在陪伴中我的手艺日渐精进，三个兽头相继诞生——每一针线都藏着专注与热忱，每一次调试都盛满成就感。</p>
+          <p>如今工作台前，绒毛、眼片、丝线相映，兽头静静陈列，聊天记录里满是共创的热忱。Furry于我，早已不是单纯的可爱符号，是匠心淬炼的执着，是挚友相伴的温暖，是快节奏生活里的精神栖息地。</p>
+          <p>期待那日，身着亲手缝制的完整兽装，与木京、蔚蓝相约漫展。让镜头定格并肩的身影，让巧手护航顺畅的互动，任蓬松绒毛拂去疲惫，让热爱、情谊与荣光，在阳光下无限蔓延。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Furry 收藏与展示 -->
+  <section id="furry" class="section section-accent" aria-label="Furry相关内容展示区">
+    <div class="container">
+      <h2 class="section-title">Furry 收藏</h2>
+      <p class="section-desc">这里整理 Furry 主题感受与入坑故事片段。</p>
+      <div class="cards">
+        <article class="card">
+          <div class="card-media" aria-hidden="true">📖</div>
+          <div class="card-body">
+            <h3>入坑故事</h3>
+            <p>我的完整入坑故事已更新，详见“关于我”版块。</p>
+            <a href="#about" class="card-link">跳转到关于我</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-media" aria-hidden="true">🖼️</div>
+          <div class="card-body">
+            <h3>图片展示</h3>
+            <p>部分 Furry 相关图片展示：</p>
+            <div class="gallery-grid">
+              <figure>
+                <img src="assets/喜欢的图片1.jpg" alt="喜欢的图片1" />
+                <figcaption>喜欢的图片 1</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/2jpg" alt="喜欢的图片2" />
+                <figcaption>喜欢的图片 2</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/3jpj" alt="喜欢的图片3" />
+                <figcaption>喜欢的图片 3</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/入坑故事图片4.jpg" alt="入坑故事相关图片" />
+                <figcaption>入坑故事图片 4</figcaption>
+              </figure>
+            </div>
+            <p>将图片放到 <code>assets/</code> 目录（文件名需与上方一致）。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 留言区：本地小留言板 + 可选 Utterances/Giscus 嵌入 -->
+  <section id="guestbook" class="section" aria-label="留言互动区">
+    <div class="container">
+      <h2 class="section-title">留言板</h2>
+      <p class="section-desc">欢迎留下你的想法与问候！默认使用本地存储演示。如需与他人共享，可在 GitHub Pages 中启用 Utterances/Giscus（下面有说明）。</p>
+
+      <!-- 本地留言板（仅当前访问者浏览器可见） -->
+      <div class="guestbook">
+        <form id="guestbookForm" class="guestbook-form" aria-label="留言表单">
+          <div class="form-row">
+            <label for="gbName">昵称</label>
+            <input id="gbName" name="gbName" type="text" placeholder="你的昵称" required />
+          </div>
+          <div class="form-row">
+            <label for="gbMsg">留言</label>
+            <textarea id="gbMsg" name="gbMsg" rows="3" placeholder="想对我说的话…" required></textarea>
+          </div>
+          <button type="submit" class="btn primary">发布留言</button>
+        </form>
+        <ul id="guestbookList" class="guestbook-list" aria-live="polite"></ul>
+      </div>
+
+      <!-- 可选：Utterances（基于 GitHub Issues 的评论系统）。按需启用：
+        1) 将 repo 替换为你的仓库（例如：yourname/yourrepo）。
+        2) 在 GitHub 仓库中安装 Utterances App。
+        3) 取消注释下面的脚本块。
+      -->
+      <!--
+      <script src="https://utteranc.es/client.js"
+        repo="yourname/yourrepo"
+        issue-term="pathname"
+        label="💬 留言"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+      </script>
+      -->
+
+      <!-- 可选：Giscus（基于 GitHub Discussions）。需在仓库启用 Discussions 后配置 data-* -->
+      <!--
+      <script src="https://giscus.app/client.js"
+        data-repo="yourname/yourrepo"
+        data-repo-id="REPO_ID"
+        data-category="General"
+        data-category-id="CATEGORY_ID"
+        data-mapping="pathname"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+      </script>
+      -->
+    </div>
+  </section>
+
+  <!-- 联系方式 -->
+  <section id="contact" class="section section-strong" aria-label="联系方式">
+    <div class="container">
+      <h2 class="section-title">联系我</h2>
+      <p class="section-desc">以下是我的常用联系方式（显眼展示）：</p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon" aria-hidden="true">🟩</div>
+          <div class="contact-body">
+            <h3>微信</h3>
+            <p class="contact-item"><strong>lanjill2026</strong></p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon" aria-hidden="true">🔵</div>
+          <div class="contact-body">
+            <h3>QQ</h3>
+            <p class="contact-item"><strong>1768332038</strong></p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon" aria-hidden="true">🎵</div>
+          <div class="contact-body">
+            <h3>抖音</h3>
+            <p class="contact-item"><strong>dyb1bw7r1t9o</strong></p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon" aria-hidden="true">🟧</div>
+          <div class="contact-body">
+            <h3>快手</h3>
+            <p class="contact-item"><strong>2324331700</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚与访客计数器 -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="visitor">
+        <span class="paw" aria-hidden="true">🐾</span>
+        <span id="visitorCount">正在统计访客…</span>
+      </div>
+      <div class="copyright">© 2025 蓝霁. 基于 GitHub Pages 构建。</div>
+    </div>
+  </footer>
+
+  <!-- 回到顶部按钮 -->
+  <button id="backToTop" class="back-to-top" aria-label="回到顶部">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

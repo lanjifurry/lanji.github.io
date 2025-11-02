@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蓝霁的可爱小屋</title>
+<style>
+    :root {
+        --main-bg: linear-gradient(135deg, #ffe6f2, #e3f2fd);
+        --card-bg: #ffffff;
+        --text-color: #333;
+        --tag-bg: #fce4ec;
+        --tag-color: #ec407a;
+        --link-color: #ec407a;
+    }
+
+    body.dark {
+        --main-bg: linear-gradient(135deg, #2c3e50, #34495e);
+        --card-bg: #3a3a3a;
+        --text-color: #f5f5f5;
+        --tag-bg: #616161;
+        --tag-color: #ffb6c1;
+        --link-color: #ffb6c1;
+    }
+
+    body {
+        margin: 0;
+        font-family: "Microsoft YaHei", "Comic Sans MS", sans-serif;
+        background: var(--main-bg);
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        transition: background 0.5s ease, color 0.5s ease;
+    }
+
+    .card {
+        background: var(--card-bg);
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        padding: 50px 40px;
+        text-align: center;
+        max-width: 450px;
+        transition: all 0.3s ease;
+        animation: fadeIn 1s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+    }
+
+    img.avatar {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        border: 4px solid #ec407a;
+        object-fit: cover;
+        margin-bottom: 20px;
+        transition: transform 0.3s;
+    }
+
+    img.avatar:hover {
+        transform: scale(1.05);
+    }
+
+    h1 {
+        font-size: 2em;
+        color: #ec407a;
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 1.1em;
+        color: #f06292;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+
+    p#intro {
+        min-height: 70px;
+        line-height: 1.8;
+        font-size: 1em;
+        margin-bottom: 15px;
+        white-space: pre-wrap;
+        color: var(--text-color);
+    }
+
+    .tags {
+        margin-top: 10px;
+    }
+
+    .tag {
+        display: inline-block;
+        background: var(--tag-bg);
+        color: var(--tag-color);
+        padding: 6px 12px;
+        border-radius: 12px;
+        margin: 5px;
+        font-size: 0.9em;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    footer a {
+        color: var(--link-color);
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    /* 夜间模式按钮 */
+    .toggle-btn {
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        background: var(--card-bg);
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transition: all 0.3s;
+        font-size: 18px;
+    }
+
+    .toggle-btn:hover {
+        transform: rotate(20deg);
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+</style>
+</head>
+<body>
+    <button class="toggle-btn" id="themeToggle">🌙</button>
+
+    <div class="card">
+        <img src="mmexport1762049942111.png" alt="蓝霁头像" class="avatar">
+        <h1>蓝霁</h1>
+        <h2>学生 · Furry 爱好者</h2>
+
+        <p id="intro"></p>
+
+        <div class="tags">
+            <span class="tag">学生</span>
+            <span class="tag">Furry</span>
+            <span class="tag">创意</span>
+            <span class="tag">温柔</span>
+            <span class="tag">可爱</span>
+        </div>
+    </div>
+
+    <footer>
+        <p>📱 微信：<a href="#">lanjill2026</a> ｜ 💬 QQ：<a href="#">1768332038</a></p>
+        <p>© 2025 蓝霁 ｜ <a href="https://lanji.github.io" target="_blank">lanji.github.io</a></p>
+    </footer>
+
+<script>
+    // 🌸 打字动画
+    const text = "你好呀～我是蓝霁，一名学生，也是一位热爱 furry 文化与创意的小伙伴。\n我喜欢可爱的角色设计、绘画与网页制作。\n希望能用温柔和想象力，让世界多一点治愈与笑容 💕";
+    let i = 0;
+    function typing() {
+        if (i < text.length) {
+            document.getElementById("intro").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typing, 60);
+        }
+    }
+    window.onload = typing;
+
+    // 🌙 夜间模式切换
+    const toggleBtn = document.getElementById('themeToggle');
+    toggleBtn.onclick = () => {
+        document.body.classList.toggle('dark');
+        toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    };
+</script>
+</body>
+</html>
